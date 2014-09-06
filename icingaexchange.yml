@@ -1,8 +1,8 @@
-name: 
+name: check_pcmeasure2
 description: "file:///README.md"
 url: "https://www.netways.org/projects/plugins"
 tags: ~
-vendor: Netways
+vendor: NETWAYS
 target: Temperature
 type: Plugin
 license: gplv2
@@ -15,5 +15,5 @@ releases:
         name: check_pcmeasure2.pl
         url: "file:///check_pcmeasure2.pl"
         description: none
-        checksum: 
+        checksum: 88124c5f41a14fced3d2108effc807d8
 
