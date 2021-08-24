@@ -67,7 +67,7 @@ Label for performance data
 Format string for text output, used with sprintf($formatstring, $value).
 Default: "$label = %.1f". Example for temperature:
 
-   "current temperature: %.1f °C"
+   "current temperature: %.1f Â°C"
 
 =item -R|--rrd-database=<path-to-db>
 
@@ -112,7 +112,7 @@ use IO::Socket::INET;
 # -- searching Nagios::Plugin, may be installed with nagios-plugins
 use FindBin;
 use lib "$FindBin::Bin/../perl/lib";
-use Nagios::Plugin;
+use Monitoring::Plugin;
 
 use vars qw( $HAVERRD );
 
@@ -144,7 +144,7 @@ my $ERR;		# RRD error string
 my @values;		# array for sensor results
 my $value;		# single sensor result
 
-my $np = Nagios::Plugin->new( shortname => "PCMEASURE" );
+my $np = Monitoring::Plugin->new( shortname => "PCMEASURE" );
 
 my %needed_sensors = (  # how many sensors are needed by type
    standard   => 1,
