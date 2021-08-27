@@ -5,7 +5,7 @@ Plugin for pcmeasure (http://www.messpc.de)
 
 ### Requirements
 
-* Perl libraries: `Nagios::Plugin`, `IO::Socket::INET`
+* Perl libraries: `Monitoring::Plugin`, `IO::Socket::INET`
 
 
 ### Usage
